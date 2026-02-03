@@ -1,11 +1,452 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Austin Choi | Software Developer</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#hero" class="logo">
+          <!-- NOTE: Alternative to using the logo img -->
+          <!-- <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket" -->
+          <!--   >/&gt;</span -->
+          <!-- > -->
+          <img src="img/favicon.png" alt="choi logo" />
+        </a>
+        <div class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-label">$ whoami</div>
+        <h1 class="hero-title">Austin Choi</h1>
+        <p class="hero-subtitle">
+          <span class="typing-effect"
+            >Software Developer & Computer Science Student</span
+          >
+        </p>
+        <div class="hero-links">
+          <a
+            href="https://github.com/choice404"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/austinch20"
+            target="_blank"
+            rel="noopener"
+            class="hero-link"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="#contact" class="hero-link">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>scroll_down</span>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <aside class="about-sidebar">
+          <div class="sidebar-content">
+            <div class="profile-image">
+              <img src="img/choi.jpg" alt="profile image" />
+            </div>
+
+            <div class="quick-facts">
+              <h3><span class="terminal-prompt">~$</span> quick_facts</h3>
+              <div class="fact-item">
+                <span class="fact-key">location:</span>
+                <span class="fact-value">"Las Vegas, NV"</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-key">education:</span>
+                <span class="fact-value">"UNLV CS"</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-key">graduation:</span>
+                <span class="fact-value">"May 2027"</span>
+              </div>
+              <!-- NOTE: Commented out since the left side cuts off during the parallax scroll effect -->
+              <!-- <div class="fact-item"> -->
+              <!--   <span class="fact-key">role:</span> -->
+              <!--   <span class="fact-value">"Software Engineer"</span> -->
+              <!-- </div> -->
+              <!-- <div class="fact-item"> -->
+              <!--   <span class="fact-key">leadership:</span> -->
+              <!--   <span class="fact-value">"President, Layer Zero"</span> -->
+              <!-- </div> -->
+              <div class="fact-item">
+                <span class="fact-key">focus:</span>
+                <span class="fact-value">"Full-Stack & Security"</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="about-main">
+          <article class="content-section">
+            <h2 class="section-title">
+              <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-text">
+              <p>
+                I'm a Computer Science student at the University of Nevada, Las
+                Vegas, with a passion for full-stack development and
+                cybersecurity. Currently serving as President of Layer Zero, a
+                cybersecurity organization where I lead a team of 10 officers
+                and mentor 30+ members.
+              </p>
+              <p>
+                I specialize in building full-stack applications with modern
+                technologies like Next.js, TypeScript, and PostgreSQL. My
+                approach combines technical precision with creative
+                problem-solving, creating tools that streamline operations and
+                improve user experiences.
+              </p>
+              <p>
+                I transferred from NYU where I studied Percussion Performance,
+                bringing a unique creative perspective to technical
+                problem-solving. This background shapes how I view software
+                development as both an engineering discipline and a form of
+                creative expression.
+              </p>
+            </div>
+          </article>
+
+          <article class="content-section">
+            <h3 class="subsection-title">
+              <span class="terminal-prompt">~$</span> technical_skills
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>languages/</h4>
+                <div class="skill-tags">
+                  <span><i class="fab fa-python"></i> Python</span>
+                  <span><i class="fab fa-js"></i> TypeScript</span>
+                  <span><i class="fab fa-js-square"></i> JavaScript</span>
+                  <span><i class="fas fa-copyright"></i> C/C++</span>
+                  <span><i class="fas fa-code"></i> Golang</span>
+                  <span><i class="fab fa-rust"></i> Rust</span>
+                  <span><i class="fas fa-database"></i> SQL</span>
+                  <span><i class="fas fa-terminal"></i> Bash</span>
+                  <span><i class="fab fa-r-project"></i> R</span>
+                  <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>frameworks/</h4>
+                <div class="skill-tags">
+                  <span><i class="fas fa-n"></i> Next.js</span>
+                  <span><i class="fab fa-react"></i> React</span>
+                  <span><i class="fab fa-node-js"></i> Node.js</span>
+                  <span><i class="fas fa-wind"></i> TailwindCSS</span>
+                  <span><i class="fas fa-brain"></i> PyTorch</span>
+                  <span><i class="fas fa-table"></i> Pandas</span>
+                  <span><i class="fas fa-square-root-alt"></i> NumPy</span>
+                  <span><i class="fas fa-chart-line"></i> Scikit-learn</span>
+                  <span><i class="fas fa-plug"></i> tRPC</span>
+                  <span><i class="fas fa-database"></i> Prisma</span>
+                  <span><i class="fas fa-droplet"></i> DrizzleORM</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>tools/</h4>
+                <div class="skill-tags">
+                  <span><i class="fab fa-git-alt"></i> Git</span>
+                  <span><i class="fab fa-github"></i> GitHub</span>
+                  <span><i class="fab fa-gitlab"></i> GitLab</span>
+                  <span><i class="fab fa-docker"></i> Docker</span>
+                  <span><i class="fas fa-database"></i> PostgreSQL</span>
+                  <span><i class="fas fa-database"></i> MySQL</span>
+                  <span><i class="fas fa-leaf"></i> MongoDB</span>
+                  <span><i class="fas fa-terminal"></i> Neovim</span>
+                  <span><i class="fas fa-code"></i> VS Code</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h4>assembly/</h4>
+                <div class="skill-tags">
+                  <span><i class="fas fa-memory"></i> MIPS</span>
+                  <span><i class="fas fa-memory"></i> x86_64</span>
+                  <span><i class="fas fa-memory"></i> ARM</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-section">
+            <h3 class="subsection-title">
+              <span class="terminal-prompt">~$</span> leadership
+            </h3>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>President of Layer Zero</h4>
+                <p class="timeline-date">June 2025 - Present</p>
+                <p>
+                  Directing a 10-officer team for a 30+ member cybersecurity
+                  organization, overseeing training, competitions, and events to
+                  enhance student technical skills. Orchestrated 20+ annual
+                  technical workshops including secure coding and CTF
+                  strategies.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-section">
+            <h3 class="subsection-title">
+              <span class="terminal-prompt">~$</span> education
+            </h3>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>University of Nevada, Las Vegas</h4>
+                <p class="timeline-date">January 2023 - May 2027</p>
+                <p class="education-degree">
+                  Bachelor of Science in Computer Science, Minor in Music
+                </p>
+                <p class="education-details">
+                  <strong>Coursework:</strong> Machine Learning, Data Structures
+                  & Algorithms, Computer Organization, Systems Programming
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>New York University</h4>
+                <p class="timeline-date">Transferred</p>
+                <p class="education-degree">Bachelor of Arts in Music</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-section">
+            <h3 class="subsection-title">
+              <span class="terminal-prompt">~$</span> interests
+            </h3>
+            <div class="interests-grid">
+              <div class="interest-item">
+                <i class="fas fa-keyboard"></i>
+                <span>Mechanical Keyboards</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-desktop"></i>
+                <span>PC Building</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-music"></i>
+                <span>Music Performance</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-brain"></i>
+                <span>Philosophy & Logic</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-utensils"></i>
+                <span>Culinary Arts</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-mask"></i>
+                <span>Cosplay</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-section">
+            <h3 class="subsection-title">
+              <span class="terminal-prompt">~$</span> philosophy
+            </h3>
+            <div class="philosophy-list">
+              <div class="philosophy-item">
+                <span class="bullet">▹</span>
+                <p>
+                  Writing clean, maintainable code that prioritizes performance
+                  and readability
+                </p>
+              </div>
+              <div class="philosophy-item">
+                <span class="bullet">▹</span>
+                <p>
+                  Fostering collaborative environments through clear
+                  communication and code reviews
+                </p>
+              </div>
+              <div class="philosophy-item">
+                <span class="bullet">▹</span>
+                <p>
+                  Breaking down complex problems systematically into manageable,
+                  incremental solutions
+                </p>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="projects-container">
+        <h2 class="section-title">
+          <span class="section-number">02.</span> Featured Projects
+        </h2>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>BotBox</h3>
+            <div class="project-links">
+              <a
+                href="https://github.com/choice404/botbox"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+          <p class="project-date">March 2025 - Present</p>
+          <p class="project-description">
+            Go-based CLI tool for simplified creation and management of Python
+            Discord bots. Features dynamic TUI form manager with Charmbracelet
+            Bubble Tea for optimal user interaction.
+          </p>
+          <div class="project-tech">
+            <span>Golang</span>
+            <span>CobraCLI</span>
+            <span>Bubble Tea</span>
+            <span>Python</span>
+            <span>TUI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>LPU - Minecraft CPU</h3>
+            <div class="project-links">
+              <a
+                href="https://github.com/choice404/lpu"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+          <p class="project-date">January 2024 - February 2024</p>
+          <p class="project-description">
+            8-bit Harvard architecture CPU built inside Minecraft using game
+            mechanics to simulate binary logic. Features custom ISA for basic
+            arithmetic and logical operations.
+          </p>
+          <div class="project-tech">
+            <span>Architecture</span>
+            <span>ISA Design</span>
+            <span>Binary Logic</span>
+            <span>Minecraft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2 class="section-title">
+          <span class="section-number">03.</span> Get In Touch
+        </h2>
+        <p class="contact-intro">
+          Currently open to new opportunities and collaborations. Feel free to
+          reach out.
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:xxxxxxxxx@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-info">
+              <h3>email</h3>
+              <p>xxxxxxxxx@gmail.com</p>
+            </div>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/austinch20"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <i class="fab fa-linkedin"></i>
+            <div class="contact-info">
+              <h3>linkedin</h3>
+              <p>austinch20</p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/choice404"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <i class="fab fa-github"></i>
+            <div class="contact-info">
+              <h3>github</h3>
+              <p>choice404</p>
+            </div>
+          </a>
+
+          <a
+            href="https://austinchoi.net"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <i class="fas fa-globe"></i>
+            <div class="contact-info">
+              <h3>website</h3>
+              <p>austinchoi.net</p>
+            </div>
+          </a>
+        </div>
+
+        <footer class="footer">
+          <p>
+            <span class="terminal-prompt">~$</span> Built with HTML, CSS &
+            <i class="fas fa-heart"></i>
+          </p>
+          <p>&copy; 2026 Austin Choi</p>
+        </footer>
+      </div>
+    </section>
+  </body>
 </html>
